@@ -19,5 +19,9 @@ Featured dishes and special offers sections
 Reservation form with backend submission
 Smooth navigation and polished visual design
 API health endpoint for backend verification
+## Screenshots
 
+![Home Page](screenshots/home.png)
+
+![Reservation Page](screenshots/reservation.png)
 
