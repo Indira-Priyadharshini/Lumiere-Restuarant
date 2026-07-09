@@ -1,2 +1,23 @@
-# Lumiere-Restuarant
-umiere Restaurant UI | A front-end web project showcasing a sophisticated restaurant website layout. Key features include an interactive menu section, hero section with high-quality imagery, and a fully responsive grid system.
+Lumière Restaurant Digital Platform
+1.Short Description
+A modern digital platform for a premium fine-dining restaurant experience. This project showcases a luxurious UI built with React and a Node.js backend for reservation handling and API connectivity.
+
+2.Tech Stack
+Frontend: React, Vite, CSS
+Backend: Node.js, Express
+Version Control: Git, GitHub
+
+3.Data Source
+Static restaurant content and UI copy
+Reservation form data processed through a backend API
+Visual assets sourced from curated public design resources
+
+4.Features and Highlights
+Elegant luxury-themed landing page
+Responsive and modern user interface
+Featured dishes and special offers sections
+Reservation form with backend submission
+Smooth navigation and polished visual design
+API health endpoint for backend verification
+
+
