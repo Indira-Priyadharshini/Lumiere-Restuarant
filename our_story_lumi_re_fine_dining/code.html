@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | LUMIÈRE Fine Dining</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#4d4635",
+                    "surface-bright": "#3a3939",
+                    "tertiary": "#e7c8ba",
+                    "error-container": "#93000a",
+                    "primary-container": "#d4af37",
+                    "background": "#131313",
+                    "surface-container-highest": "#353534",
+                    "surface-tint": "#e9c349",
+                    "on-tertiary": "#3f2c22",
+                    "primary-fixed": "#ffe088",
+                    "secondary": "#ffb5a0",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#0e0e0e",
+                    "outline": "#99907c",
+                    "on-secondary": "#5f1500",
+                    "on-primary-fixed-variant": "#574500",
+                    "tertiary-container": "#caad9f",
+                    "secondary-fixed-dim": "#ffb5a0",
+                    "tertiary-fixed": "#fcdccd",
+                    "on-surface": "#e5e2e1",
+                    "on-tertiary-fixed": "#28180f",
+                    "inverse-surface": "#e5e2e1",
+                    "on-surface-variant": "#d0c5af",
+                    "on-primary": "#3c2f00",
+                    "on-secondary-fixed": "#3b0900",
+                    "on-tertiary-fixed-variant": "#574237",
+                    "inverse-on-surface": "#313030",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#ffdbd1",
+                    "surface-dim": "#131313",
+                    "primary": "#f2ca50",
+                    "surface": "#131313",
+                    "secondary-container": "#d73b00",
+                    "surface-container-low": "#1c1b1b",
+                    "inverse-primary": "#735c00",
+                    "on-primary-container": "#554300",
+                    "surface-variant": "#353534",
+                    "on-secondary-container": "#fffbff",
+                    "on-tertiary-container": "#564036",
+                    "on-primary-fixed": "#241a00",
+                    "on-background": "#e5e2e1",
+                    "surface-container": "#201f1f",
+                    "primary-fixed-dim": "#e9c349",
+                    "tertiary-fixed-dim": "#dfc0b2",
+                    "on-secondary-fixed-variant": "#862200",
+                    "on-error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(44, 27, 18, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
+        }
+        .dotted-leader {
+            border-bottom: 1px dotted #99907c;
+            flex-grow: 1;
+            margin: 0 8px;
+            margin-bottom: 5px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-sm text-primary uppercase tracking-widest" href="#">LUMIÈRE</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md tracking-wide text-primary border-b-2 border-primary pb-1" href="#">About</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Menu</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Offers</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-caps text-label-caps hover:opacity-80 transition-all duration-300 active:scale-95">
+                Table Reservation
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: The Spirit of Lumière -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105 transition-transform duration-[10s] ease-linear hover:scale-100" data-alt="A cinematic, wide-angle photograph of a dimly lit luxury restaurant interior at dusk. Golden candlelight flickers on polished dark wood tables and crystal glassware. The atmosphere is sophisticated and intimate, with deep amber glow highlighting the architectural details of a minimalist, high-end dining room. The aesthetic is ultra-premium with a moody, Michelin-star level presentation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnXqztjoFTOyemKMoAq7jUfBiWM0LtbLEMZDJ9k3S9qU0iH-u1lnU94HfAvnfltxKQr0yAoWTLww5Pdrg-XHWy0j_tvTS4conFb2F-W9scxoDC-Q8ItGo6k6PQyngqg4jy0sf5cjxjeeUSQs5SYNbFhGnFhP_A8uwfATyDkztdD6Ic2Ulvio8YcnW7J2W8291VxTQbyIs7yT37KmK4rLoHuD5hhZqpwZNXQ4sFfFl1goXQKIxSX1c1jUm4TbJAwLaNXYAi0SnKKF5I')"></div>
+<div class="absolute inset-0 bg-black/60"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile">
+<p class="font-label-caps text-label-caps text-primary mb-4 tracking-[0.4em] uppercase">Est. 2014</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">Our Legacy of Light</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto opacity-90">An odyssey of culinary excellence, where tradition meets the avant-garde in the heart of the city.</p>
+</div>
+</section>
+<!-- Restaurant Story & Mission -->
+<section class="px-margin-desktop py-section-gap max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 space-y-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">The Story</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Born from a passion for the ephemeral beauty of light and the enduring soul of seasonal ingredients, Lumière began as a singular vision: to create a dining experience that transcends the meal itself. For over a decade, we have refined our craft, balancing the architectural precision of modern gastronomy with the warmth of classic hospitality.
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-8 pt-8">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">Mission</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">To illuminate the hidden complexities of nature through rigorous culinary technique and sensory storytelling.</p>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">Vision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Defining the future of global fine dining while honoring the local heritage of our artisanal producers.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 md:col-start-8">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden glass-card p-2">
+<img class="w-full h-full object-cover rounded-lg" data-alt="A top-down, high-fidelity photograph of a complex, artistic appetizer plated on a matte black ceramic dish. A single scallop is garnished with micro-greens, edible gold leaf, and a delicate citrus foam. The lighting is focused and dramatic, highlighting the textures of the food against a dark, minimalist background. The style is sophisticated and hyper-curated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnnbNvxv4BN-a4XGDqnYHfbJ5dG63ffdLgfJX43aCPNDvetjCTLvdLmGl48_vflgdwAJ2S8sbdZBsfodfnJKTvYTo9OcYIxIorfOrJWWUc1mXJdan_pnQy6YAu4tv1axaJIMuVMeThYk-fZeUKe5n-04iLQvhQ2a8QhwVtxbS3E_9I0RpWXo6TIHE2A_AntQyG0atL6ysgElVkPLOFB23gwiUtMfwkZQPD4dm7cALYfK_CYMWCs2LtIDCLPxbYjNNcFMRHsHinoSKm"/>
+</div>
+</div>
+</section>
+<!-- Chef Profiles -->
+<section class="bg-surface-container-lowest py-section-gap px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Masters</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">The visionaries behind our menus, bringing decades of Michelin-starred expertise to every plate.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Chef 1 -->
+<div class="flex flex-col md:flex-row gap-8 items-center bg-surface/30 p-8 rounded-2xl glass-card transition-all duration-500 hover:translate-y-[-8px]">
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden border-2 border-primary/20">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a renowned executive chef in a crisp white chef's coat with gold embroidery. He has a dignified, serious expression and is standing in a modern, stainless steel kitchen. The lighting is soft and flattering, with a shallow depth of field. The overall aesthetic is one of quiet authority and high-end culinary professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPjyhThzc2Spb2ybkALisWqUCLUPw200o2bsQu_Hg-LnzYjfpaL23hNu81PST-E_Nwbmo4aU202LukEaYJGwSc6-Q5U4ei052AcUcZd6kVUOfRIhahio936iRSf48-ypTGBPoUyepaw2ZE2USJv_WmNKa0zQOj4QHaoj6QIQQu3YRKeqYUK9cWEyLerc9oLGw69sy6fDA46qWv8lnMrBbcCDrwwu0jI0r-rNIvdcCfp1eDbGsPE9QjY9dioOt14K1fl5HOvcQDtWC5"/>
+</div>
+<div class="text-center md:text-left">
+<h3 class="font-headline-sm text-headline-sm text-white">Julian Vane</h3>
+<p class="font-label-caps text-label-caps text-primary mb-4">Executive Chef</p>
+<p class="font-body-md text-body-md text-on-surface-variant">With 20 years at the vanguard of European cuisine, Chef Julian brings a structural brilliance and deep respect for terroir to Lumière.</p>
+</div>
+</div>
+<!-- Chef 2 -->
+<div class="flex flex-col md:flex-row gap-8 items-center bg-surface/30 p-8 rounded-2xl glass-card transition-all duration-500 hover:translate-y-[-8px]">
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden border-2 border-primary/20">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a female pastry chef in a black designer chef's jacket. She is smiling subtly while holding a delicate, sculptural chocolate dessert. The background is a blurred, warm-toned dining room. The lighting is warm and inviting, capturing the intricate details of her craft. The style is elegant, modern, and artistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeEz1AZ-KElwVWd5nKv79g7uIjVEhCAuXqQwFSC1uNeJ0QDfSOswwIhXm7cS8Licw05fK_AZJ5Y1kg905bnZ-MBcu3iOBtQcOuSaLpVhrSsF8rWIa2Ddr-Z6mW7drFS7wNcs8nQAiqOC-XJRi1_KahpG6o6d-kG0FNp4gdQl14YbdOqgSArlOxDoIyF_9c40juNAN_dFaVYh4NHrH3zHMqc_Oc9Fpt7ectjl31GLwcxYnYCLVhhKwPVlOxPJaUTcc-nV9aLk9ZAJKv"/>
+</div>
+<div class="text-center md:text-left">
+<h3 class="font-headline-sm text-headline-sm text-white">Elena Rossi</h3>
+<p class="font-label-caps text-label-caps text-primary mb-4">Head Pastry Chef</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Master of textures and the subtle art of balance, Elena’s desserts are sculptural tributes to seasonal sweetness and spice.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interior Gallery (Bento Style) -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-12 text-center">The Sanctuary</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A wide shot of the main dining room of a luxury restaurant. Dramatic floor-to-ceiling windows overlook a city skyline at night. The interior features plush velvet seating in deep chocolate tones, circular marble tables, and a central architectural light installation made of hundreds of hand-blown glass spheres. The mood is opulent, spacious, and ultra-modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVu69Zoe-htW2y9KSBQCiw6_eGDf4P47k2VSajtRvl6khPAZRv3vT0XaRLXcHu5aLnBqv68dCXO7sK1TAE3GYz1Pzxto6KBkvKMOZGNLEfRWGmTqRjUwe-Nb_YKT5G0rwoCup14odRyp_u56O83MLJGr6tUik5e-QDCh1EgAq0rXpfOA7GQRJXxb_wOEHnBA5NoYWJepDZ9EWRW2e1ks1JR4mWnVaxyDGvjVceikIv3xJTTtYvbth8m4Pdth5tmmEbIQezhHkXeXhx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<p class="font-headline-sm text-white">The Grand Atrium</p>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An intimate close-up of a private dining cove. The walls are textured dark bronze, and the table is set with minimalist black stoneware and bespoke silver cutlery. A single, focused spotlight illuminates the center of the table. The atmosphere is intensely private and exclusive, reflecting a quiet, high-luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV2MOr2Sap_1gQR_Towj7Ut8tqy-6ly6qTfJHiXQqt8BoovjbpnJJMGbamyQWAEHOa_dEOW25O4HJCBZ3DvxKPimjVSn9h3T9CU2IlLfgdGjbfOduI_JRJ_CUisb-VfZwN06SwJzf8vI8v-phYoB8VxLugtDiTass1KZFnzTVUo8sWBQGlTwGvZ1_5VfuHhgDCsBAg8OO8d0yGuqh1Ed8i5OHYkNRaccNfjip9NrpUfv5_3lFcuurCJAeQzSU6sv6EEuIwF9QOBEKF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+<p class="font-headline-sm text-white">The Shadow Suite</p>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sleek, back-lit bar area with hundreds of premium spirit bottles arranged in a glowing amber grid. The bar counter is a single slab of polished black obsidian. A mixologist's hands are visible preparing a vibrant cocktail. The lighting is sharp, clean, and high-contrast, evoking a sophisticated nightlife vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmQunhuD1zEJizZWbX01iMAZXncaSXuEfgFoIRdMult_Vha9J0-yX6NdUGyGQYAgMhbFR5xy6_vhtnxUt_o8mhTJMK_aApS7s6R55A4rn_iCtYh41H7I1OV18yCZiXc3v5uLLTxIfdD3UvVSG7bN8HbcYwUqGZM2702opArKKTOJ9ibKZO-xlFhO0oMTAXfQ1kTP0q6c86uZ9eWMmDKX82D1zx7CZ01_WT3_SBq1UPr0YkIlEVvG2vbTGkk5q5J4uYrKQ1V2L5aHNi"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A glimpse into the wine cellar through a glass door. Rows of vintage bottles are stored in temperature-controlled wood and steel racks. The lighting is cool-toned and architectural. The image suggests a vast collection of rare and high-value labels, emphasized by the precise organization and luxury materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWLQMhpHmyaVzRdJ3uyWk3w628wh2RCUJUUWr0oS1u-BVv_3AbJZa9pe-Lq79ZXMDVC3NyDwnrqjkKS3EB5Dcp-wRmG8oy-gi6Vvi3NdMxlJenhjZs3tkYLtJtWZUb6t7GlIyq3vHUQNrTEef3N_K8ZP4lK8vXWvHxSaRLHOvwjie7GtZpojmToNXpOfZaXrXRlsYQVzySkcbb41OlJ3XxteTaCAThdAVTfqFCTPT0gELv_OR4rhs9u451B1-b9WhZM5AxIS44n6td"/>
+</div>
+</div>
+</section>
+<!-- Awards & Accolades -->
+<section class="bg-surface-container-low py-section-gap border-y border-white/5">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Accolades</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Recognition from the world's most prestigious culinary institutions, confirming our commitment to perfection.</p>
+</div>
+<div class="hidden md:block h-px bg-primary/20 flex-grow mx-12 mb-4"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-70">
+<div class="flex flex-col items-center text-center group">
+<span class="material-symbols-outlined text-[64px] text-primary mb-4 group-hover:scale-110 transition-transform">stars</span>
+<p class="font-label-caps text-label-caps text-white">Three Michelin Stars</p>
+<p class="text-[10px] text-outline-variant mt-1">2021 — 2024</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<span class="material-symbols-outlined text-[64px] text-primary mb-4 group-hover:scale-110 transition-transform">restaurant_menu</span>
+<p class="font-label-caps text-label-caps text-white">World's 50 Best</p>
+<p class="text-[10px] text-outline-variant mt-1">Ranked #12 Global</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<span class="material-symbols-outlined text-[64px] text-primary mb-4 group-hover:scale-110 transition-transform">wine_bar</span>
+<p class="font-label-caps text-label-caps text-white">Wine Spectator</p>
+<p class="text-[10px] text-outline-variant mt-1">Grand Award Winner</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<span class="material-symbols-outlined text-[64px] text-primary mb-4 group-hover:scale-110 transition-transform">diamond</span>
+<p class="font-label-caps text-label-caps text-white">AAA Five Diamond</p>
+<p class="text-[10px] text-outline-variant mt-1">Exceptional Service</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Hygiene & Commitment -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="glass-card p-12 md:p-20 rounded-[2rem] border-primary/10 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Uncompromising Purity</h2>
+<div class="max-w-3xl mx-auto space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface">At Lumière, hygiene is not a protocol—it is a cornerstone of our philosophy. We maintain medical-grade standards of cleanliness throughout our kitchens and dining spaces.</p>
+<div class="flex flex-wrap justify-center gap-8 mt-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-caps text-label-caps text-white uppercase">ISO 22000 Certified</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-caps text-label-caps text-white uppercase">Sustainably Sourced</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-caps text-label-caps text-white uppercase">Zero-Waste Commitment</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Persistent Action Shell) -->
+<div class="fixed bottom-8 right-8 w-auto flex flex-col items-end gap-4 z-50 rounded-full bg-background/40 backdrop-blur-2xl border border-white/10 shadow-3xl p-4">
+<a class="bg-surface-container-high text-primary rounded-full p-4 hover:scale-110 transition-transform active:scale-90 flex items-center justify-center" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<a class="bg-primary text-on-primary rounded-full p-4 hover:scale-110 transition-transform active:scale-90 flex items-center justify-center" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+</a>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full pt-section-gap pb-8 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-4">
+<h2 class="font-display-lg text-headline-md text-primary">LUMIÈRE</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Where every meal is a masterstroke of light and flavor.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-white mb-6 uppercase">Experience</h4>
+<nav class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Menu</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Reservations</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Private Events</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Gift Cards</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-white mb-6 uppercase">Contact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">124 Gastronomy Way,<br/>Lux District, City</p>
+<p class="font-body-md text-body-md text-on-surface-variant">+1 (555) 000-8888</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-white mb-6 uppercase">Company</h4>
+<nav class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Careers</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Press Kit</a>
+</nav>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-white/5 text-center px-margin-desktop max-w-container-max mx-auto">
+<p class="font-body-md text-body-md text-outline-variant opacity-60">© 2024 Lumière Fine Dining. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for header
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-background/95');
+                nav.classList.remove('py-4', 'bg-background/80');
+            } else {
+                nav.classList.add('py-4', 'bg-background/80');
+                nav.classList.remove('py-2', 'bg-background/95');
+            }
+        });
+
+        // Intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

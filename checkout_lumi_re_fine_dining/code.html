@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMIÈRE | Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(44, 27, 18, 0.2);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .dotted-leader {
+            border-bottom: 1px dotted rgba(153, 144, 124, 0.4);
+            flex-grow: 1;
+            margin: 0 8px;
+            margin-bottom: 5px;
+        }
+        body {
+            background-color: #0A0A0A;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#2a2a2a",
+                      "outline-variant": "#4d4635",
+                      "surface-bright": "#3a3939",
+                      "tertiary": "#e7c8ba",
+                      "error-container": "#93000a",
+                      "primary-container": "#d4af37",
+                      "background": "#131313",
+                      "surface-container-highest": "#353534",
+                      "surface-tint": "#e9c349",
+                      "on-tertiary": "#3f2c22",
+                      "primary-fixed": "#ffe088",
+                      "secondary": "#ffb5a0",
+                      "on-error": "#690005",
+                      "surface-container-lowest": "#0e0e0e",
+                      "outline": "#99907c",
+                      "on-secondary": "#5f1500",
+                      "on-primary-fixed-variant": "#574500",
+                      "tertiary-container": "#caad9f",
+                      "secondary-fixed-dim": "#ffb5a0",
+                      "tertiary-fixed": "#fcdccd",
+                      "on-surface": "#e5e2e1",
+                      "on-tertiary-fixed": "#28180f",
+                      "inverse-surface": "#e5e2e1",
+                      "on-surface-variant": "#d0c5af",
+                      "on-primary": "#3c2f00",
+                      "on-secondary-fixed": "#3b0900",
+                      "on-tertiary-fixed-variant": "#574237",
+                      "inverse-on-surface": "#313030",
+                      "error": "#ffb4ab",
+                      "secondary-fixed": "#ffdbd1",
+                      "surface-dim": "#131313",
+                      "primary": "#f2ca50",
+                      "surface": "#131313",
+                      "secondary-container": "#d73b00",
+                      "surface-container-low": "#1c1b1b",
+                      "inverse-primary": "#735c00",
+                      "on-primary-container": "#554300",
+                      "surface-variant": "#353534",
+                      "on-secondary-container": "#fffbff",
+                      "on-tertiary-container": "#564036",
+                      "on-primary-fixed": "#241a00",
+                      "on-background": "#e5e2e1",
+                      "surface-container": "#201f1f",
+                      "primary-fixed-dim": "#e9c349",
+                      "tertiary-fixed-dim": "#dfc0b2",
+                      "on-secondary-fixed-variant": "#862200",
+                      "on-error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "section-gap": "120px",
+                      "container-max": "1280px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "label-caps": ["Inter"],
+                      "display-lg-mobile": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm text-primary uppercase tracking-widest">LUMIÈRE</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Menu</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Offers</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:opacity-80 transition-all duration-300 active:scale-95">
+                Table Reservation
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<header class="mb-12">
+<h1 class="font-display-lg text-display-lg text-primary mb-2">Checkout</h1>
+<p class="text-on-surface-variant font-body-lg text-body-lg">Review your selection for an exquisite dining experience.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Order Details -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Delivery/Pickup Toggle -->
+<section class="glass-card p-unit rounded-xl overflow-hidden">
+<div class="flex p-1 bg-surface-container-low rounded-lg">
+<button class="flex-1 py-3 rounded-md font-label-caps text-label-caps transition-all duration-300 bg-primary text-on-primary" id="delivery-toggle">
+                            Delivery
+                        </button>
+<button class="flex-1 py-3 rounded-md font-label-caps text-label-caps transition-all duration-300 text-on-surface-variant hover:text-primary" id="pickup-toggle">
+                            Pickup
+                        </button>
+</div>
+<div class="mt-8 space-y-6 px-4 pb-4" id="delivery-details">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div class="flex-1">
+<h3 class="font-headline-sm text-headline-sm mb-1">Delivery Address</h3>
+<p class="text-on-surface-variant text-body-md">124 Luxury Estates, Kensington, London</p>
+<button class="text-primary text-label-caps mt-2 hover:underline">Change Address</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Shopping Cart -->
+<section class="space-y-6">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-3">
+<span class="material-symbols-outlined">shopping_bag</span>
+                        Your Selection
+                    </h2>
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="glass-card p-6 rounded-xl flex flex-col md:flex-row items-center gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A high-fidelity, overhead shot of a gourmet Truffle Tagliatelle dish served in a dark ceramic bowl. The lighting is moody and warm, highlighting the creamy texture of the sauce and the delicate shavings of fresh black truffle. The surrounding surface is a dark, textured slate, emphasizing a luxury minimalist dining aesthetic with golden utensil accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1OORPYV-LuAJ8_UnqrF5ZlXTxQcQKPaoazQUNNuzGquLM3bNOIRbbLTW4P-Syc43oVgnES5PCjsyOGAd6leSetiBhr6yMhe7vOJ3GOmNAbOVAnIPDE9_HrTEO8UESyIf5jIjpI8tcuCBv8jBxweJN6EyK0K5NR5lJRITIk6ETH_Wh-keP8pVmisHNxNnKFnuJfnZ2pTz7tJsR-PgPud6a_7-KggUlEEesw7lMGc8_du4VZVym8aNgFlZTqkrbaHeQKLGzS5fwcvw-"/>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h4 class="font-headline-sm text-body-lg">Truffle Tagliatelle</h4>
+<p class="text-on-surface-variant text-sm italic">Fresh handmade pasta, Piedmont truffles, aged parmesan.</p>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-4 py-2">
+<button class="text-primary hover:scale-110 transition-transform"><span class="material-symbols-outlined">remove</span></button>
+<span class="font-headline-sm text-body-md w-4 text-center">1</span>
+<button class="text-primary hover:scale-110 transition-transform"><span class="material-symbols-outlined">add</span></button>
+</div>
+<div class="text-primary font-headline-sm text-headline-sm">$42.00</div>
+</div>
+<!-- Item 2 -->
+<div class="glass-card p-6 rounded-xl flex flex-col md:flex-row items-center gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up of a perfectly seared Wagyu Beef Fillet resting on a minimalist white porcelain plate. A glossy red wine reduction drizzle creates artistic swirls around the meat, which is garnished with a single sprig of micro-greens. The ambient lighting is soft and candlelit, evoking a Michelin-starred fine dining atmosphere with deep shadows and warm highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqs2ekTP7JhBdeQx07xGIIfzROyBOCcTMNYoYt19t0PpJrO6TiXUUtV2DAeM-T5dYBlZPzoltmC81dPmpTEcoMcOTQWTkdmd_dQGO_8JGLYylIoMCeQsEH8thh8LS6CxK_fG27lw5OOSUDHmgveFFseueDCx3B1P8ycEi5vsQfYZz7c3ztGibiZPqSwYQ2Zav8CaiAR-qjhJFPr116h9zW5jjG_puzR8QBFidu-dIpszF5TP01O5obwkkgUiZ1oIiBJaEfCZtMYhnV"/>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h4 class="font-headline-sm text-body-lg">Wagyu Fillet Mignon</h4>
+<p class="text-on-surface-variant text-sm italic">A5 Grade Wagyu, red wine reduction, charred shallots.</p>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-4 py-2">
+<button class="text-primary hover:scale-110 transition-transform"><span class="material-symbols-outlined">remove</span></button>
+<span class="font-headline-sm text-body-md w-4 text-center">1</span>
+<button class="text-primary hover:scale-110 transition-transform"><span class="material-symbols-outlined">add</span></button>
+</div>
+<div class="text-primary font-headline-sm text-headline-sm">$85.00</div>
+</div>
+</div>
+</section>
+<!-- Payment Methods -->
+<section class="space-y-6">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-3">
+<span class="material-symbols-outlined">payments</span>
+                        Payment Method
+                    </h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<label class="glass-card p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer border-primary bg-primary/10 transition-all hover:bg-primary/20">
+<input checked="" class="hidden" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-primary text-3xl">credit_card</span>
+<span class="text-label-caps font-label-caps">Credit Card</span>
+</label>
+<label class="glass-card p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer border-transparent transition-all hover:bg-surface-container-high">
+<input class="hidden" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-on-surface-variant text-3xl">account_balance_wallet</span>
+<span class="text-label-caps font-label-caps">UPI / GPay</span>
+</label>
+<label class="glass-card p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer border-transparent transition-all hover:bg-surface-container-high">
+<input class="hidden" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-on-surface-variant text-3xl">apps</span>
+<span class="text-label-caps font-label-caps">Apple Pay</span>
+</label>
+<label class="glass-card p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer border-transparent transition-all hover:bg-surface-container-high">
+<input class="hidden" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-on-surface-variant text-3xl">payments</span>
+<span class="text-label-caps font-label-caps">COD</span>
+</label>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary (Sticky) -->
+<div class="lg:col-span-4 sticky top-32">
+<div class="glass-card p-8 rounded-2xl shadow-3xl">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-8 pb-4 border-b border-white/10">Order Summary</h3>
+<div class="space-y-4 mb-8">
+<div class="flex items-end justify-between">
+<span class="text-on-surface-variant text-body-md">Subtotal</span>
+<div class="dotted-leader"></div>
+<span class="text-on-surface font-headline-sm text-body-md">$127.00</span>
+</div>
+<div class="flex items-end justify-between">
+<span class="text-on-surface-variant text-body-md">Service Tax (8%)</span>
+<div class="dotted-leader"></div>
+<span class="text-on-surface font-headline-sm text-body-md">$10.16</span>
+</div>
+<div class="flex items-end justify-between">
+<span class="text-on-surface-variant text-body-md">Delivery Fee</span>
+<div class="dotted-leader"></div>
+<span class="text-primary font-headline-sm text-body-md">FREE</span>
+</div>
+</div>
+<!-- Promo Code -->
+<div class="mb-8">
+<label class="block text-label-caps font-label-caps text-on-surface-variant mb-2">Promo Code</label>
+<div class="flex gap-2">
+<input class="flex-1 bg-surface-container-low border border-outline-variant rounded-lg px-4 py-2 text-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Enter code" type="text"/>
+<button class="bg-outline-variant text-on-surface px-4 rounded-lg font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-all">Apply</button>
+</div>
+</div>
+<div class="pt-6 border-t border-white/20 mb-8">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm">Total</span>
+<span class="font-display-lg text-headline-md text-primary">$137.16</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-headline-sm text-headline-sm shadow-xl hover:opacity-90 hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                        Complete Order
+                    </button>
+<p class="text-center text-on-surface-variant text-xs mt-6 px-4">
+                        By completing your order, you agree to Lumière's <a class="underline" href="#">Terms of Service</a> and <a class="underline" href="#">Privacy Policy</a>.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full pt-section-gap pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-4">
+<div class="font-display-lg text-headline-md text-primary">LUMIÈRE</div>
+<p class="text-on-surface-variant text-body-md max-w-xs">An odyssey of taste, curated for the most discerning palates. Fine dining redefined.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-sm text-body-lg text-primary">Explore</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Our Story</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">The Menu</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Private Events</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Gallery</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-sm text-body-lg text-primary">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Press Kit</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-sm text-body-lg text-primary">Contact</h4>
+<ul class="space-y-2">
+<li class="text-on-surface-variant text-body-md">info@lumiere.com</li>
+<li class="text-on-surface-variant text-body-md">+1 (234) 567 890</li>
+<li class="text-on-surface-variant text-body-md mt-4">
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">chat</span></a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-white/5 text-center">
+<p class="text-on-surface-variant text-body-md">© 2024 Lumière Fine Dining. All rights reserved.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Contextual FABs) -->
+<div class="fixed bottom-8 right-8 flex flex-col items-end gap-4 z-50">
+<a class="bg-surface-container-high text-primary rounded-full p-4 shadow-3xl hover:scale-110 transition-transform active:scale-90 duration-150" href="https://wa.me/lumiere">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</div>
+<script>
+        // Interactive Elements Logic
+        const deliveryToggle = document.getElementById('delivery-toggle');
+        const pickupToggle = document.getElementById('pickup-toggle');
+        const deliveryDetails = document.getElementById('delivery-details');
+
+        deliveryToggle.addEventListener('click', () => {
+            deliveryToggle.classList.add('bg-primary', 'text-on-primary');
+            deliveryToggle.classList.remove('text-on-surface-variant');
+            pickupToggle.classList.remove('bg-primary', 'text-on-primary');
+            pickupToggle.classList.add('text-on-surface-variant');
+            deliveryDetails.style.opacity = '1';
+        });
+
+        pickupToggle.addEventListener('click', () => {
+            pickupToggle.classList.add('bg-primary', 'text-on-primary');
+            pickupToggle.classList.remove('text-on-surface-variant');
+            deliveryToggle.classList.remove('bg-primary', 'text-on-primary');
+            deliveryToggle.classList.add('text-on-surface-variant');
+            deliveryDetails.style.opacity = '0.5'; // Visual cue for disabled section
+        });
+
+        // Payment Method Selector Styling
+        const paymentLabels = document.querySelectorAll('input[name="payment"]');
+        paymentLabels.forEach(input => {
+            input.parentElement.addEventListener('click', () => {
+                paymentLabels.forEach(i => {
+                    i.parentElement.classList.remove('border-primary', 'bg-primary/10');
+                    i.parentElement.classList.add('border-transparent');
+                    i.parentElement.querySelector('span:first-of-type').classList.remove('text-primary');
+                    i.parentElement.querySelector('span:first-of-type').classList.add('text-on-surface-variant');
+                });
+                input.parentElement.classList.add('border-primary', 'bg-primary/10');
+                input.parentElement.classList.remove('border-transparent');
+                input.parentElement.querySelector('span:first-of-type').classList.add('text-primary');
+                input.parentElement.querySelector('span:first-of-type').classList.remove('text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | LUMIÈRE Fine Dining</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#4d4635",
+                    "surface-bright": "#3a3939",
+                    "tertiary": "#e7c8ba",
+                    "error-container": "#93000a",
+                    "primary-container": "#d4af37",
+                    "background": "#131313",
+                    "surface-container-highest": "#353534",
+                    "surface-tint": "#e9c349",
+                    "on-tertiary": "#3f2c22",
+                    "primary-fixed": "#ffe088",
+                    "secondary": "#ffb5a0",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#0e0e0e",
+                    "outline": "#99907c",
+                    "on-secondary": "#5f1500",
+                    "on-primary-fixed-variant": "#574500",
+                    "tertiary-container": "#caad9f",
+                    "secondary-fixed-dim": "#ffb5a0",
+                    "tertiary-fixed": "#fcdccd",
+                    "on-surface": "#e5e2e1",
+                    "on-tertiary-fixed": "#28180f",
+                    "inverse-surface": "#e5e2e1",
+                    "on-surface-variant": "#d0c5af",
+                    "on-primary": "#3c2f00",
+                    "on-secondary-fixed": "#3b0900",
+                    "on-tertiary-fixed-variant": "#574237",
+                    "inverse-on-surface": "#313030",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#ffdbd1",
+                    "surface-dim": "#131313",
+                    "primary": "#f2ca50",
+                    "surface": "#131313",
+                    "secondary-container": "#d73b00",
+                    "surface-container-low": "#1c1b1b",
+                    "inverse-primary": "#735c00",
+                    "on-primary-container": "#554300",
+                    "surface-variant": "#353534",
+                    "on-secondary-container": "#fffbff",
+                    "on-tertiary-container": "#564036",
+                    "on-primary-fixed": "#241a00",
+                    "on-background": "#e5e2e1",
+                    "surface-container": "#201f1f",
+                    "primary-fixed-dim": "#e9c349",
+                    "tertiary-fixed-dim": "#dfc0b2",
+                    "on-secondary-fixed-variant": "#862200",
+                    "on-error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #0A0A0A; scroll-behavior: smooth; }
+        .glass-panel {
+            background: rgba(44, 27, 18, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        .dotted-leader {
+            border-bottom: 1px dotted rgba(242, 202, 80, 0.3);
+            flex-grow: 1;
+            margin: 0 12px;
+            margin-bottom: 5px;
+        }
+        .input-gold-focus:focus {
+            border-color: #f2ca50;
+            outline: none;
+            box-shadow: 0 0 0 1px #f2ca50;
+        }
+    </style>
+</head>
+<body class="text-on-background font-body-md selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm text-primary uppercase tracking-widest">LUMIÈRE</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Menu</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Offers</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md tracking-wide text-primary border-b-2 border-primary pb-1" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-none font-label-caps text-label-caps uppercase hover:opacity-80 transition-all active:scale-95 duration-200">
+                Table Reservation
+            </button>
+</nav>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-7">
+<span class="text-primary font-label-caps text-label-caps uppercase tracking-widest mb-4 block">Get in Touch</span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-none">Connections Crafted Over <span class="text-primary">Fine Cuisine.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Whether you wish to inquire about a private event, share your experience, or book the Chef's Table, our concierge is at your disposal.</p>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Form Column -->
+<div class="lg:col-span-7 space-y-12">
+<div class="glass-panel p-10 rounded-xl">
+<h2 class="font-headline-md text-headline-md mb-8">Inquiry Form</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Full Name</label>
+<input class="w-full bg-surface-container-low border border-white/10 p-4 font-body-md text-on-surface focus:border-primary outline-none transition-all rounded-none" placeholder="Julian Vane" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Email Address</label>
+<input class="w-full bg-surface-container-low border border-white/10 p-4 font-body-md text-on-surface focus:border-primary outline-none transition-all rounded-none" placeholder="julian@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Phone Number</label>
+<input class="w-full bg-surface-container-low border border-white/10 p-4 font-body-md text-on-surface focus:border-primary outline-none transition-all rounded-none" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Message</label>
+<textarea class="w-full bg-surface-container-low border border-white/10 p-4 font-body-md text-on-surface focus:border-primary outline-none transition-all rounded-none resize-none" placeholder="How may we assist you today?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-caps text-label-caps py-5 uppercase tracking-widest hover:opacity-90 transition-all active:scale-[0.98]" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+<!-- Map Section -->
+<div class="w-full h-96 glass-panel rounded-xl overflow-hidden grayscale contrast-125 opacity-80 hover:opacity-100 transition-opacity">
+<div class="w-full h-full bg-surface-container-highest flex items-center justify-center relative" data-location="Place Vendôme, Paris" style="">
+<span class="material-symbols-outlined text-primary text-6xl opacity-50">location_on</span>
+<div class="absolute bottom-6 left-6 bg-background/90 p-4 border border-primary/20">
+<p class="font-label-caps text-label-caps text-primary uppercase">Location</p>
+<p class="font-body-md text-body-md">15 Place Vendôme, 75001 Paris, France</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Info & Reservation Column -->
+<div class="lg:col-span-5 space-y-12">
+<!-- Reservation Bar (Table Reservation) -->
+<div class="glass-panel p-10 border-primary/30 rounded-xl bg-primary/5">
+<h2 class="font-headline-md text-headline-md mb-6 text-primary">Reserve a Table</h2>
+<div class="space-y-6">
+<div class="flex items-center">
+<span class="font-body-md text-on-surface-variant">Standard Dining</span>
+<div class="dotted-leader"></div>
+<span class="font-body-md text-primary">Available</span>
+</div>
+<div class="flex items-center">
+<span class="font-body-md text-on-surface-variant">Chef's Table</span>
+<div class="dotted-leader"></div>
+<span class="font-body-md text-on-surface-variant">Limited</span>
+</div>
+<div class="pt-4 grid grid-cols-2 gap-4">
+<button class="border border-primary text-primary py-4 font-label-caps text-label-caps uppercase hover:bg-primary/10 transition-all">Select Date</button>
+<button class="border border-primary text-primary py-4 font-label-caps text-label-caps uppercase hover:bg-primary/10 transition-all">Select Guest</button>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 font-label-caps text-label-caps uppercase tracking-widest shadow-xl">Confirm Reservation</button>
+</div>
+</div>
+<!-- Details Card -->
+<div class="space-y-10">
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4 border-b border-white/10 pb-2">Business Hours</h3>
+<ul class="space-y-3 font-body-md text-on-surface-variant">
+<li class="flex justify-between"><span>Mon — Thu</span> <span>18:00 – 23:00</span></li>
+<li class="flex justify-between text-on-surface font-semibold"><span>Fri — Sat</span> <span>17:30 – 00:00</span></li>
+<li class="flex justify-between"><span>Sunday</span> <span>12:00 – 22:00</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4 border-b border-white/10 pb-2">Contact Details</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Phone</p>
+<p class="font-body-md">+33 1 42 36 00 00</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Concierge</p>
+<p class="font-body-md">concierge@lumiere-dining.fr</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4 border-b border-white/10 pb-2">Social Presence</h3>
+<div class="flex gap-6">
+<a class="w-12 h-12 flex items-center justify-center border border-white/10 rounded-full hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center border border-white/10 rounded-full hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center border border-white/10 rounded-full hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">restaurant</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Anchor Section -->
+<section class="w-full h-[614px] relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-contrast close-up of a Michelin-star dish being finished with a gold-leaf garnish in a dimly lit, luxury kitchen. Warm embers and soft amber lighting illuminate the sleek dark surfaces. The atmosphere is quiet, intense, and hyper-luxurious, echoing the Lumiere brand identity with deep shadows and golden highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuChSmZnRlcDrV39aSM-81F2eSS4dogy8-3OyryIl_Gl-s_OMnREgZmk1eEFqzNGUYwVoSpGeqwaIEY7Rnr_AQDJfOby-QP1fqd5ffdFo4f9hUbch5C6pLlNtmvP1hzUx3U5N7Y16VqhEsdKWhX1b-NAWa0_zlI8I21UviKIUp_MvkHS6IMIus9_dtMZBzPVNW2atx40T6W2G210XAVBEeqdkwsHi88JLn8fYxGRiwH66UO1b_0sNjRozXkn6zwS9CrcS9vka-yQQNiU')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h2 class="font-display-lg text-display-lg mb-4">A Night to Remember</h2>
+<p class="font-label-caps text-label-caps tracking-[0.3em] uppercase">Excellence in every detail</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-8 bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-4">
+<div class="font-display-lg text-headline-md text-primary uppercase tracking-widest">LUMIÈRE</div>
+<p class="font-body-md text-on-surface-variant max-w-xs">An odyssey of taste, where classical heritage meets modern innovation in the heart of the city.</p>
+</div>
+<div class="space-y-4">
+<p class="font-label-caps text-label-caps uppercase text-primary">Discover</p>
+<ul class="space-y-2 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">The Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Wine Cellar</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<p class="font-label-caps text-label-caps uppercase text-primary">Legal</p>
+<ul class="space-y-2 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<p class="font-label-caps text-label-caps uppercase text-primary">Join our circle</p>
+<div class="flex">
+<input class="bg-surface-container-high border-none p-3 w-full font-body-md text-on-surface focus:ring-1 focus:ring-primary" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-4 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/5 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Lumière Fine Dining. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="material-symbols-outlined text-primary text-sm">auto_awesome</span>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Action Shell) -->
+<div class="fixed bottom-8 right-8 w-auto flex flex-col gap-4 z-50 rounded-full bg-background/40 backdrop-blur-2xl border border-white/10 shadow-3xl p-4">
+<a class="bg-surface-container-high text-primary rounded-full p-4 hover:scale-110 transition-transform active:scale-90 duration-150 flex items-center justify-center" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<a class="bg-primary text-on-primary rounded-full p-4 hover:scale-110 transition-transform active:scale-90 duration-150 flex items-center justify-center" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+</a>
+</div>
+<script>
+        // Micro-interactions for form inputs
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label')?.classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label')?.classList.remove('text-primary');
+            });
+        });
+
+        // Simple smooth scroll for links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

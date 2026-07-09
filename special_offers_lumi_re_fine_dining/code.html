@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMIÈRE | Exclusive Offers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            background-color: #0A0A0A;
+            color: #e5e2e1;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(44, 27, 18, 0.2);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(to right, #f2ca50, #ffe088, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .dotted-leader {
+            border-bottom: 2px dotted rgba(153, 144, 124, 0.3);
+            flex-grow: 1;
+            margin: 0 8px;
+            margin-bottom: 6px;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+        }
+
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(242, 202, 80, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(242, 202, 80, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(242, 202, 80, 0); }
+        }
+
+        .animate-gold-pulse {
+            animation: pulse-gold 2s infinite;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#2a2a2a",
+                        "outline-variant": "#4d4635",
+                        "surface-bright": "#3a3939",
+                        "tertiary": "#e7c8ba",
+                        "error-container": "#93000a",
+                        "primary-container": "#d4af37",
+                        "background": "#131313",
+                        "surface-container-highest": "#353534",
+                        "surface-tint": "#e9c349",
+                        "on-tertiary": "#3f2c22",
+                        "primary-fixed": "#ffe088",
+                        "secondary": "#ffb5a0",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#0e0e0e",
+                        "outline": "#99907c",
+                        "on-secondary": "#5f1500",
+                        "on-primary-fixed-variant": "#574500",
+                        "tertiary-container": "#caad9f",
+                        "secondary-fixed-dim": "#ffb5a0",
+                        "tertiary-fixed": "#fcdccd",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary-fixed": "#28180f",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface-variant": "#d0c5af",
+                        "on-primary": "#3c2f00",
+                        "on-secondary-fixed": "#3b0900",
+                        "on-tertiary-fixed-variant": "#574237",
+                        "inverse-on-surface": "#313030",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#ffdbd1",
+                        "surface-dim": "#131313",
+                        "primary": "#f2ca50",
+                        "surface": "#131313",
+                        "secondary-container": "#d73b00",
+                        "surface-container-low": "#1c1b1b",
+                        "inverse-primary": "#735c00",
+                        "on-primary-container": "#554300",
+                        "surface-variant": "#353534",
+                        "on-secondary-container": "#fffbff",
+                        "on-tertiary-container": "#564036",
+                        "on-primary-fixed": "#241a00",
+                        "on-background": "#e5e2e1",
+                        "surface-container": "#201f1f",
+                        "primary-fixed-dim": "#e9c349",
+                        "tertiary-fixed-dim": "#dfc0b2",
+                        "on-secondary-fixed-variant": "#862200",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm text-primary uppercase tracking-widest">LUMIÈRE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Menu</a>
+<a class="font-body-md text-body-md tracking-wide text-primary border-b-2 border-primary pb-1" href="#">Offers</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:opacity-80 transition-all duration-300 active:scale-95">
+                Table Reservation
+            </button>
+</nav>
+</header>
+<main class="pt-32 pb-section-gap">
+<!-- Hero: Limited-Time Banner -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="relative w-full h-[500px] rounded-xl overflow-hidden glass-card group">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic, high-end photography shot of a candlelit long dining table at Lumière, featuring crystal glassware, gold cutlery, and gourmet appetizers. The lighting is warm and moody with amber glows against a deep black background, creating an atmosphere of exclusive luxury and intimacy. Subtle steam rises from a signature dish in the foreground, emphasizing freshness and culinary mastery." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxyTgbDQZR3NdK7eHUqCzzJTk99aePMVkg3v0W6SvqICQfFc15WrekZXKaydykvF5fG6r-tGxcpXwzhZ_OrKa7-60XTOdPdKvTHBE7pWXHlAt4zeVd9kadZcpVY3dB00x8YvEuoz64EepozqMXHxHHlaewPTfw36SLBCdj_5dDkiGaKTeZMQ2325ZC55HvWCW1oUpMEVC8gbgSpz6a02JQho0bh3_EifRlQZj9WMVB33v152JjYLmItrSM4PZztKvg6WGEJpV4vzvF')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-end p-12 max-w-2xl">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em]">Limited Time Offer</span>
+</div>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">The Grand Solstice Tasting Menu</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Experience a 9-course sensory journey through French-Mediterranean fusion. Available exclusively this weekend with a 25% introductory privilege.</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:opacity-90 transition-all animate-gold-pulse">Claim Offer</button>
+<button class="border border-primary text-primary px-8 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary/10 transition-all backdrop-blur-sm">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Ongoing Discounts & Combo Meals (Bento Grid) -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<h2 class="font-headline-md text-headline-md mb-12 flex items-center gap-4">
+<span class="w-12 h-[1px] bg-primary"></span>
+                Curated Privileges
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Big Combo Deal -->
+<div class="md:col-span-8 glass-card rounded-xl overflow-hidden flex flex-col md:flex-row group">
+<div class="md:w-1/2 overflow-hidden h-64 md:h-auto">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A meticulously arranged combo meal featuring a gold-leafed wagyu steak, a side of truffle mashed potatoes, and a glass of vintage red wine. The scene is lit with warm, directional light highlighting the textures of the food against a dark, minimalist marble tabletop. The overall aesthetic is premium, moody, and sophisticated, reflecting a high-end Michelin-star experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCb_VrIhFIpUildkGKmpIGiUAruYXBvAhS7u4QVUcYSnfR60kstp9I4hz9ZbLAcH89dgJIstZ_9Gl86-AFUR4V88Cpt6e_qUEGbd3SSVewxUurbGAt6wIovDOeAlFESTh6_Kv78zNvpxemWikH9CbCh8MjjeV6byE8J-MdWQSfk0aMad_Fr-AJtp8VzXuTojQ486B5_8Zzd31p_S3uZlkepZxTz033kzHOtMjyW6T95HM4PKTqhZN3PnT7VsawYlmhE90pf7nAyXQYW')">
+</div>
+</div>
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<span class="text-primary font-label-caps text-label-caps mb-2">CHEF'S SIGNATURE COMBO</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">The Lumière Signature Duo</h3>
+<div class="flex items-center mb-6">
+<span class="font-headline-md text-headline-md text-primary">$185</span>
+<span class="ml-3 text-on-surface-variant line-through font-body-md text-body-md">$240</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                                A5 Wagyu Ribeye (250g)
+                            </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                                Sommelier's Wine Pairing
+                            </li>
+</ul>
+<button class="w-full border border-primary text-primary py-3 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">Select Privilege</button>
+</div>
+</div>
+<!-- Small Discount Card 1 -->
+<div class="md:col-span-4 glass-card rounded-xl p-8 flex flex-col justify-between hover:border-primary/50 transition-colors">
+<div>
+<div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">lunch_dining</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Corporate Lunch</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">20% off for mid-week business gatherings. Valid Tue-Thu.</p>
+</div>
+<div class="mt-8">
+<div class="text-primary font-label-caps text-label-caps mb-1">PROMO CODE</div>
+<div class="bg-surface-container-high px-4 py-3 rounded-lg border border-white/5 font-mono text-primary flex justify-between items-center group cursor-pointer">
+<span>LUMCORP20</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">content_copy</span>
+</div>
+</div>
+</div>
+<!-- Small Discount Card 2 -->
+<div class="md:col-span-4 glass-card rounded-xl p-8 flex flex-col justify-between hover:border-primary/50 transition-colors">
+<div>
+<div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">celebration</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Anniversary Bloom</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Complimentary vintage champagne &amp; dessert for celebrations.</p>
+</div>
+<button class="mt-8 text-primary font-label-caps text-label-caps uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all">
+                        Reserve Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Festival Special -->
+<div class="md:col-span-8 glass-card rounded-xl relative overflow-hidden group">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700" data-alt="A decadent festive dessert spread featuring gold-dusted chocolate truffles, seasonal fruits, and sparkling wine. The setting is luxurious with dark velvet textures, candle flames reflecting in polished silver, and a warm, inviting glow. The image exudes a sense of holiday celebration and high-end artisanal craftsmanship." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdNOJyQFi_G3mDue7_ZmZjSZCe8NMlgdfkn1qVJo-IAfbrfww0xzpf3OCuRYsF5R_jUKVwt649fE-LU6m-lGxmBuOVKZkHGV4R3kV23jwNGyWAN-cZ2xlbYxo8IEIYoyRUyS4bsa5tmog3NupqkKHIko9678CnYwdKeLnwHtJiFyC3KhshMHypF0ZznUpf8WZ_YzJ9w9jHo-qitWBKJFnBzK38o7dP6br3LQssxFlFXjZ5bcxwYR6CZHoyPSmxipb8-Dy7JGWyyP6m')">
+</div>
+</div>
+<div class="relative z-10 p-12 h-full flex flex-col justify-center max-w-lg">
+<span class="inline-block px-3 py-1 bg-primary text-on-primary font-label-caps text-[10px] rounded mb-4">SEASONAL FESTIVAL</span>
+<h3 class="font-headline-md text-headline-md mb-4">Autumn Equinox Soiree</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A 5-day celebration of harvest flavors. Exclusive tasting flights at 30% off for loyalty members.</p>
+<div class="flex items-center gap-6">
+<div class="text-center">
+<div class="font-headline-sm text-headline-sm">03</div>
+<div class="font-label-caps text-[10px] text-primary">DAYS</div>
+</div>
+<div class="w-[1px] h-8 bg-white/10"></div>
+<div class="text-center">
+<div class="font-headline-sm text-headline-sm">14</div>
+<div class="font-label-caps text-[10px] text-primary">HOURS</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Weekend Specials (Menu List Style) -->
+<section class="bg-surface-container-lowest py-section-gap mb-section-gap">
+<div class="px-margin-desktop max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.3em] block mb-4">Weekend Exclusives</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg">The Saturday Séance</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Late-night curated specials from 10 PM onwards</p>
+</div>
+<div class="space-y-8">
+<div class="flex items-end">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm">Truffle Nocturne Pasta</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Hand-rolled tajarin, winter truffle, 36-month parmesan</span>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-headline-sm text-headline-sm text-primary">$42</div>
+</div>
+<div class="flex items-end">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm">Oyster &amp; Pearl Pairing</span>
+<span class="font-body-md text-body-md text-on-surface-variant">6 Gillardeau oysters, Beluga caviar, 2 glasses of Krug</span>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-headline-sm text-headline-sm text-primary">$120</div>
+</div>
+<div class="flex items-end">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm">Midnight Wagyu Slider Duo</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Brioche bun, gold leaf, balsamic onion marmalade</span>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-headline-sm text-headline-sm text-primary">$35</div>
+</div>
+<div class="flex items-end">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm">Liquid Gold Old Fashioned</span>
+<span class="font-body-md text-body-md text-on-surface-variant">23-year bourbon, honey reduction, saffron bitters</span>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-headline-sm text-headline-sm text-primary">$28</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="bg-transparent border border-primary text-primary px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">Book Late Night Table</button>
+</div>
+</div>
+</section>
+<!-- Loyalty Rewards Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="glass-card rounded-2xl p-12 relative overflow-hidden border-primary/20">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display-lg text-headline-md md:text-display-lg mb-6 gold-gradient-text">The Gilded Circle</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">Our loyalty program isn't just about points; it's about proximity to the art of dining. Join an elite community of connoisseurs.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary-container/20 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">star_rate</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px]">Priority Seating</h4>
+<p class="text-on-surface-variant font-body-md">Always find a table, even on fully booked weekends.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary-container/20 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px]">Secret Menu Access</h4>
+<p class="text-on-surface-variant font-body-md">Taste experimental dishes before they debut.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-white/5 premium-shadow">
+<div class="mb-8">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-caps text-label-caps text-primary">CURRENT STATUS: SILVER</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">850 / 1000 PTS</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-lg mb-8">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">confirmation_number</span>
+<span class="font-body-md font-bold">1 Valid Voucher</span>
+</div>
+<button class="text-primary font-label-caps text-label-caps underline">Redeem</button>
+</div>
+<p class="text-[14px] text-on-surface-variant mt-2">Free Chef’s Amuse-Bouche on your next visit.</p>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:opacity-90 transition-all">My Rewards Dashboard</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<div class="fixed bottom-8 right-8 w-auto flex flex-col gap-4 z-50 rounded-full">
+<a class="bg-surface-container-high text-primary rounded-full p-4 shadow-3xl border border-white/10 hover:scale-110 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</a>
+<a class="bg-primary text-on-primary rounded-full p-4 shadow-3xl border border-white/10 hover:scale-110 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</a>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full pt-section-gap pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-display-lg text-headline-md text-primary mb-6">LUMIÈRE</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-8">Redefining fine dining through an intersection of tradition and avant-garde culinary arts.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-primary hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-primary hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6 uppercase tracking-widest">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Press Kit</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6 uppercase tracking-widest">Contact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">124 Avenue des Champs-Élysées<br/>Paris, France 75008<br/><br/>+33 1 42 25 15 15<br/>reservations@lumiere.com</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-section-gap pt-8 border-t border-white/5 text-center md:text-left">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-50">© 2024 Lumière Fine Dining. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions and Countdown
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 3);
+        targetDate.setHours(targetDate.getHours() + 14);
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = targetDate - now;
+            
+            // Logic would normally update the DOM here
+            // This is just a placeholder for the animated effect
+        }
+
+        setInterval(updateCountdown, 1000);
+
+        // Hover effect for promo codes
+        document.querySelectorAll('.group.cursor-pointer').forEach(code => {
+            code.addEventListener('click', function() {
+                const text = this.querySelector('span').innerText;
+                navigator.clipboard.writeText(text);
+                const originalText = text;
+                this.querySelector('span').innerText = 'COPIED!';
+                setTimeout(() => {
+                    this.querySelector('span').innerText = originalText;
+                }, 2000);
+            });
+        });
+    </script>
+</body></html>
