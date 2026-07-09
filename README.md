@@ -21,8 +21,11 @@ Smooth navigation and polished visual design
 API health endpoint for backend verification
 ## Screenshots
 
-![Home Page](screenshots/screenshot home.png)
-![Qffer Page](screenshots/screenshot offer.png)
-![About Page](screenshots/screenshot about.png)
-![Reservation Page](screenshots/screenshot reservation.png)
+![Home Page](screenshots/screenshot-home.png)
+
+![Offer Page](screenshots/screenshot-offer.png)
+
+![About Page](screenshots/screenshot-about.png)
+
+![Reservation Page](screenshots/screenshot-reservation.png)
 
