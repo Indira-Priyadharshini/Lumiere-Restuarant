@@ -21,11 +21,11 @@ Smooth navigation and polished visual design
 API health endpoint for backend verification
 ## Screenshots
 
-![Home Page](screenshots/screenshot-home.png)
+![Home Page](screenshots/Screenshot-home.png)
 
-![Offer Page](screenshots/screenshot-offer.png)
+![Offer Page](screenshots/Screenshot-offer.png)
 
-![About Page](screenshots/screenshot-about.png)
+![About Page](screenshots/Screenshot-about.png)
 
-![Reservation Page](screenshots/screenshot-reservation.png)
+![Reservation Page](screenshots/Screenshot-reservation.png)
 
